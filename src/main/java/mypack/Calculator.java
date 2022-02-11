@@ -6,6 +6,7 @@ public class Calculator {
 		// TODO Auto-generated method stub
 		new Calculator().addition("1+2+3");
 		//eclipse
+		
 	}
 
 	public int addition(String numbersStr) {
