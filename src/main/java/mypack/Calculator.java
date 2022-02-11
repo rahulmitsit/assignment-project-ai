@@ -14,6 +14,7 @@ new Calculator().addition("1+2+3");
 			sum=sum+Integer.parseInt(string);
 		}
 		
+		
 		System.out.println(sum);
 		return sum;
 	}
