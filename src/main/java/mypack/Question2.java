@@ -22,27 +22,23 @@ public class Question2 extends Thread{
 		Question2 t5=new Question2("Thread-5");
 		try {
 			t1.start();
-//			t1.join();
+			t1.join();
 			
 			t2.start();
-//			t2.join();
+			t2.join();
 			
 			t3.start();
-//			t3.join();
+			t3.join();
 			
 			t4.start();
-//			t4.join();
+			t4.join();
 			
-//			t5.start();
-			
-//			if(!Thread.currentThread().isAlive()) {
-//				System.out.println("here");
+			t5.start();
+
+//			System.out.println(Thread.currentThread().getId());
+//			if(!t1.isAlive() && !t2.isAlive() && !t3.isAlive() && !t4.isAlive()) {
 //				t5.start();
 //			}
-//			System.out.println(Thread.currentThread().getId());
-			if(!t1.isAlive() && !t2.isAlive() && !t3.isAlive() && !t4.isAlive()) {
-				t5.start();
-			}
 		}catch (Exception e) {
 			System.out.println(e);
 		}
