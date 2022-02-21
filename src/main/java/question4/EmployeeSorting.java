@@ -20,7 +20,7 @@ public class EmployeeSorting {
 		
 	}
 
-	public void defaultSortPojo() {
+	public String defaultSortPojo() {
 		Set<EmployeeDefaultSorting> empTreeset=new TreeSet<EmployeeDefaultSorting>();
 		EmployeeDefaultSorting emp=new EmployeeDefaultSorting(1,"vijay","vishwakarma");
 		empTreeset.add(emp);
@@ -35,8 +35,9 @@ public class EmployeeSorting {
 		
 		
 		System.out.println(empTreeset.toString());
+		return empTreeset.toString();
 	}
-	public void customPojoSort() {
+	public String customPojoSort() {
 		Set<Employee> empTreeset2=new TreeSet<Employee>(new firstNameComparator());
 		Employee emp=new Employee(1,"abc","shah");
 		empTreeset2.add(emp);
@@ -48,6 +49,7 @@ public class EmployeeSorting {
 		empTreeset2.add(emp3);
 		
 		System.out.println(empTreeset2.toString());
+		return empTreeset2.toString();
 	}
 	
 	

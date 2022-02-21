@@ -24,7 +24,7 @@ public class EmployeeDefaultSorting implements Comparable<EmployeeDefaultSorting
 
 	@Override
 	public String toString() {
-		return "Employee [id=" + id + ", firstName=" + firstName + ", lastname=" + lastname + "]\n";
+		return "[id=" + id + ",firstName=" + firstName + ",lastname=" + lastname + "]";
 	}
 	@Override
 	public int compareTo(EmployeeDefaultSorting o) {
